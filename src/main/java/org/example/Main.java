@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Main {
@@ -119,14 +120,13 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
         // Примеры использования
         try {
-            System.out.println(calc("1 + 2")); // Output: 3
-            System.out.println(calc("VI / III")); // Output: II
-            System.out.println(calc("I - II")); // Output: throws Exception
-            System.out.println(calc("I + 1")); // Output: throws Exception
-            System.out.println(calc("1")); // Output: throws Exception
-            System.out.println(calc("1 + 2 + 3")); // Output: throws Exception
+             // Output: II
+
+            System.out.println("Ответ: " + calc(input));
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
